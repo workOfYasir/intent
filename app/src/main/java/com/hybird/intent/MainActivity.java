@@ -21,13 +21,16 @@ public class MainActivity extends AppCompatActivity {
     {
         try
         {
-            personalInfo objectStudent=new personalInfo();
-            objectStudent.setName("Ali Sheraz");
+            personalInfo objectPersons=new personalInfo();
+            Record humanData=new Record();
 
-
+            humanData.setName("Yasir Iqbal");
+            humanData.setAddress("Sheikhupura");
+            humanData.setRoll(95);
+            objectPersons.setPersonalData(humanData);
 
             startActivity(new Intent(this, second.class)
-                    .putExtra("student",objectStudent)
+                    .putExtra("person",objectPersons)
             );
         }
         catch (Exception e)
