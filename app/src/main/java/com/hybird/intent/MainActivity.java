@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             humanData.setName("Yasir Iqbal");
             humanData.setAddress("Sheikhupura");
             humanData.setRoll(95);
-            objectPersons.setPersonalData(humanData);
+            objectPersons.setPersonalData(personalData);
 
             startActivity(new Intent(this, second.class)
                     .putExtra("person",objectPersons)
